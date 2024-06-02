@@ -19,9 +19,28 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.globalTopBackground{
+    background-image: url("../Images/software.jpg");
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .homeTopBackgroundOverlay{
     background-color: rgba(0,0,0,0.3);
     height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.globalTopBackgroundOverlay{
+    background-color: rgba(0,0,0,0.3);
+    height: 250px;
     width: 100%;
     background-size: cover;
     background-position: center;
