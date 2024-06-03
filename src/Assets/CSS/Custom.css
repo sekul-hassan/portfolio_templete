@@ -153,3 +153,26 @@
 .footerCreditLink:hover{
     color: #8BC34A;
 }
+.imgDiv img{
+    width: 250px;
+    height: auto;
+}
+.globalTitle{
+    font-family: Montserrat, serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+.boldDes{
+    font-family: Montserrat, serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #797979;
+    text-decoration: none;
+}
+.description{
+    font-family: Montserrat, serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
