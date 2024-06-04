@@ -6,11 +6,12 @@ import "../src/Assets/CSS/Custom.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "./Pages/About";
 import Project from "./Pages/Project";
+import ProjectDetails from "./Pages/ProjectDetails";
 
 function App() {
   return (
    <Fragment>
-     <Project/>
+     <ProjectDetails/>
    </Fragment>
   );
 }

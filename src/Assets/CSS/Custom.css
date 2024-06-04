@@ -176,3 +176,12 @@
     font-weight: 400;
     color: black;
 }
+.slideImg{
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+}
+.sliderCol{
+    background-image: var(--gradient2);
+    padding: 20px !important;
+}
