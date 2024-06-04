@@ -7,11 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "./Pages/About";
 import Project from "./Pages/Project";
 import ProjectDetails from "./Pages/ProjectDetails";
+import SkillPages from "./Pages/SkillPages";
 
 function App() {
   return (
    <Fragment>
-     <ProjectDetails/>
+     <SkillPages/>
    </Fragment>
   );
 }
