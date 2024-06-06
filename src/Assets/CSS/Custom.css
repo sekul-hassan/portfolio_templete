@@ -204,3 +204,16 @@ a{
     border: 1px solid silver;
     border-radius: 20px 0 0 20px;
 }
+.resumeBtn{
+    background-image: var(--gradient2);
+    border: none!important;
+    font-family: Montserrat, serif !important;
+    font-size: 17px!important;
+    width: 200px!important;
+    border-radius: 20px!important;
+}
+.resumeBtn:hover{
+    background-image: var(--gradient1);
+    color: black!important;
+
+}
