@@ -8,11 +8,12 @@ import About from "./Pages/About";
 import Project from "./Pages/Project";
 import ProjectDetails from "./Pages/ProjectDetails";
 import SkillPages from "./Pages/SkillPages";
+import ResumePage from "./Pages/ResumePage";
 
 function App() {
   return (
    <Fragment>
-     <SkillPages/>
+     <ResumePage/>
    </Fragment>
   );
 }
