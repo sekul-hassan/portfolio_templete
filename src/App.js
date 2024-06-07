@@ -9,12 +9,20 @@ import Project from "./Pages/Project";
 import ProjectDetails from "./Pages/ProjectDetails";
 import SkillPages from "./Pages/SkillPages";
 import ResumePage from "./Pages/ResumePage";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
   return (
-   <Fragment>
-     <ResumePage/>
-   </Fragment>
+   <BrowserRouter>
+       <Routes>
+           <Route path="/" element={<Home/>}/>
+           <Route path="/resume" element={ <ResumePage/>}/>
+           <Route path="/about" element={ <About/>}/>
+           <Route path="/project" element={ <Project/>}/>
+           <Route path="/skill" element={ <SkillPages/>}/>
+       </Routes>
+
+   </BrowserRouter>
   );
 }
 

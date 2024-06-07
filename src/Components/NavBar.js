@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Nav, Navbar} from "react-bootstrap";
 import logo from "../Assets/Images/logo.png";
+import {Link} from "react-router-dom";
 
 function NavBar(props) {
 
@@ -38,11 +39,11 @@ function NavBar(props) {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto"/>
                 <Nav className="mx-3">
-                    <Nav.Link className={css.navLink} href="#home">Home</Nav.Link>
-                    <Nav.Link className={css.navLink} href="#link">About</Nav.Link>
-                    <Nav.Link className={css.navLink} href="#link">Projects</Nav.Link>
-                    <Nav.Link className={css.navLink} href="#link">Skills</Nav.Link>
-                    <Nav.Link className={css.navLink} href="#link">Resume</Nav.Link>
+                    <Link to="/" className={css.navLink} >Home</Link>
+                    <Link to="/about" className={css.navLink} >About</Link>
+                    <Link to="/project" className={css.navLink} >Projects</Link>
+                    <Link to="/skill" className={css.navLink} >Skills</Link>
+                    <Link to="/resume" className={css.navLink} >Resume</Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
