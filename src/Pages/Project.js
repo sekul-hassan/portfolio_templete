@@ -6,6 +6,7 @@ import Footer from "../Components/Footer";
 import img1 from "../Assets/Images/java.jpg";
 import img2 from "../Assets/Images/react.jpg";
 import {Col, Container, Row} from "react-bootstrap";
+import projectConfig from "../Config/ProjectConfig";
 
 function Project(props) {
    const text = "EXPLORE ME WITH MY PROJECTS";
@@ -17,18 +18,14 @@ function Project(props) {
            <GlobalTop text={text}/>
            <Container fluid="true" className="px-3">
                <Row>
-                  <Col sm={12} md={6} lg={4}>
-                      <ProjectCard text={text1} image={img1}/>
-                  </Col>
-                  <Col sm={12} md={6} lg={4}>
-                      <ProjectCard text={text2} image={img2}/>
-                  </Col>
-                  <Col sm={12} md={6} lg={4}>
-                      <ProjectCard text={text2} image={img1}/>
-                  </Col>
-                  <Col sm={12} md={6} lg={4}>
-                      <ProjectCard text={text2} image={img2}/>
-                  </Col>
+
+                      {
+                          projectConfig && projectConfig.map((project,idx)=>(
+                              <Col sm={12} md={6} lg={4}>
+                                    <ProjectCard text={project.description} image={project.demoImage} projectId={project.projectId}/>
+                              </Col>
+                          ))
+                      }
                </Row>
            </Container>
            <Footer/>
