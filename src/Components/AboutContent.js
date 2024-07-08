@@ -1,57 +1,59 @@
 import React from 'react';
 import {Container} from "react-bootstrap";
-import image from "../Assets/Images/software.jpg";
+import aboutConfig from "../Config/AboutConfig";
 
 function AboutContent(props) {
     return (
         <Container fluid="true" className="mt-3">
             <div className="text-center">
                 <div className="imgDiv">
-                    <img src={image} alt=""/>
+                    {
+                        aboutConfig && (
+                            <img src={aboutConfig.image} alt=""/>
+                        )
+                    }
                 </div>
-                <h3 className="title mt-3">SEKUL HASSAN</h3>
-                <a className="boldDes" href="#">CEO of Recursive Education</a>
+                <h3 className="title mt-3">{aboutConfig.name}</h3>
+                <a className="boldDes" href="#">{aboutConfig.description}</a>
             </div>
             <div className="mt-4 px-4">
                 <p className="description">
-                    <span className="globalTitle">University :</span> Under graduate student at Jahangirnagar University
-                    (Department of Computer Science of Engineering).
+                    <span className="globalTitle">University :</span> {aboutConfig.university
+                }
                 </p>
                 <p className="description">
-                    <span className="globalTitle">College :</span> Netrakona Govt. Collage
+                    <span className="globalTitle">College :</span> {aboutConfig.college
+                }
                 </p>
                 <p className="description">
-                    <span className="globalTitle"> School :</span> Bekhoir Hati N.K High School Kendua, Netrakona
+                    <span className="globalTitle"> School :</span> {aboutConfig.school}
                 </p>
                 <p className="description">
-                    <span className="globalTitle"> Current Address : </span> Jahangirnagar University, Savar, Dhaka
+                    <span className="globalTitle"> Current Address : </span> {aboutConfig.current_address}
                 </p>
                 <p className="description">
-                    <span className="globalTitle">Permanent Address : </span>Challisha Koreha, Gouripur , Mymenshingh
+                    <span className="globalTitle">Permanent Address : </span>{aboutConfig.permanent_address}
                 </p>
                 <p className="description">
-                    <span className="globalTitle">Religion : </span>Islam
+                    <span className="globalTitle">Religion : </span>{aboutConfig.religion}
                 </p>
                 <p className="description">
-                    <span className="globalTitle">Marital Status : </span>Un married
+                    <span className="globalTitle">Marital Status : </span>{aboutConfig.martial_status}
                 </p>
                 <p className="description">
-                    <span className="globalTitle">Date of Birth : </span>25 February 2001
+                    <span className="globalTitle">Date of Birth : </span>{aboutConfig.dob}
                 </p>
                 <p className="description">
-                    <span className="globalTitle">Contact Number : </span>01824340471
+                    <span className="globalTitle">Contact Number : </span>{aboutConfig.number}
                 </p>
                 <p className="description">
-                    <span className="globalTitle"></span>
+                    <span className="globalTitle">Email : </span><a className="text-decoration-none" href="">{aboutConfig.email}</a>
                 </p>
                 <p className="description">
-                    <span className="globalTitle">Email : </span><a className="text-decoration-none" href="">sekulhassan3031@gmail.com</a>
+                    <span className="globalTitle">LinkedIn : </span><a className="text-decoration-none" href="">{aboutConfig.linkedIn}</a>
                 </p>
                 <p className="description">
-                    <span className="globalTitle">LinkedIn : </span><a className="text-decoration-none" href="">https://linkedid.com/in/sekul-hassan</a>
-                </p>
-                <p className="description">
-                    <span className="globalTitle">Github : </span><a className="text-decoration-none" href="">https://github.com/sekul-hassan</a>
+                    <span className="globalTitle">Github : </span><a className="text-decoration-none" href="">{aboutConfig.gitHub}</a>
                 </p>
             </div>
         </Container>
